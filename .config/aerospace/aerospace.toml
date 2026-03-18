@@ -219,7 +219,7 @@ on-mode-changed = []
 [[on-window-detected]]
     if.app-id = 'net.whatsapp.WhatsApp'
     run = 'move-node-to-workspace 2'
-    
+
 # Files
 ## Finder Config
 [[on-window-detected]]
@@ -235,4 +235,8 @@ on-mode-changed = []
 ## Codex Config
 [[on-window-detected]]
     if.app-id = 'com.openai.codex'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'dev.zed.Zed'
     run = 'move-node-to-workspace 1'
