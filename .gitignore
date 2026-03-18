@@ -14,5 +14,4 @@
 # Examples: keep secrets out
 **/*secret*
 **/*token*
-**/*key*
 **/secrets*
