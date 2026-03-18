@@ -130,7 +130,7 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     alt-cmd-ctrl-1 = 'workspace 1' # code
-    alt-cmd-ctrl-2 = 'workspace 2' # chats
+    alt-cmd-ctrl-2 = 'workspace 2' # notion
     alt-cmd-ctrl-3 = 'workspace 3'
     alt-cmd-ctrl-4 = 'workspace 4'
     alt-cmd-ctrl-5 = 'workspace 5'
@@ -140,6 +140,7 @@ on-mode-changed = []
     alt-cmd-ctrl-9 = 'workspace 9'
     alt-cmd-ctrl-a = 'workspace A' # browser
     alt-cmd-ctrl-t = 'workspace T' # terminal
+    alt-cmd-ctrl-c = 'workspace C' # chat
     alt-cmd-ctrl-m = 'fullscreen'
 
 
@@ -155,7 +156,7 @@ on-mode-changed = []
     alt-cmd-ctrl-shift-9 = 'move-node-to-workspace --focus-follows-window 9'
     alt-cmd-ctrl-shift-a = 'move-node-to-workspace --focus-follows-window A'
     alt-cmd-ctrl-shift-t = 'move-node-to-workspace --focus-follows-window T'
-
+    alt-cmd-ctrl-shift-c = 'move-node-to-workspace --focus-follows-window C'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -208,17 +209,17 @@ on-mode-changed = []
 ## Discord Config
 [[on-window-detected]]
     if.app-id = 'com.hnc.Discord'
-    run = 'move-node-to-workspace 2'
+    run = 'move-node-to-workspace C'
 
 ## Telegram Config
 [[on-window-detected]]
     if.app-id = 'ru.keepcoder.Telegram'
-    run = 'move-node-to-workspace 2'
+    run = 'move-node-to-workspace C'
 
 ## Whatsapp Config
 [[on-window-detected]]
     if.app-id = 'net.whatsapp.WhatsApp'
-    run = 'move-node-to-workspace 2'
+    run = 'move-node-to-workspace C'
 
 # Files
 ## Finder Config
@@ -240,3 +241,8 @@ on-mode-changed = []
 [[on-window-detected]]
     if.app-id = 'dev.zed.Zed'
     run = 'move-node-to-workspace 1'
+
+## Notion Config
+[[on-window-detected]]
+    if.app-id = 'notion.id'
+    run = 'move-node-to-workspace 2'
