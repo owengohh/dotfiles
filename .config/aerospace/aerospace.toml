@@ -138,7 +138,8 @@ on-mode-changed = []
     alt-cmd-ctrl-7 = 'workspace 7'
     alt-cmd-ctrl-8 = 'workspace 8'
     alt-cmd-ctrl-9 = 'workspace 9'
-    alt-cmd-ctrl-a = 'workspace A' # browser
+    alt-cmd-ctrl-a = 'workspace A' # zen browser
+    alt-cmd-ctrl-x = 'workspace X' # helium
     alt-cmd-ctrl-t = 'workspace T' # terminal
     alt-cmd-ctrl-c = 'workspace C' # chat
     alt-cmd-ctrl-m = 'fullscreen'
@@ -155,15 +156,16 @@ on-mode-changed = []
     alt-cmd-ctrl-shift-8 = 'move-node-to-workspace --focus-follows-window 8'
     alt-cmd-ctrl-shift-9 = 'move-node-to-workspace --focus-follows-window 9'
     alt-cmd-ctrl-shift-a = 'move-node-to-workspace --focus-follows-window A'
+    alt-cmd-ctrl-shift-x = 'move-node-to-workspace --focus-follows-window X'
     alt-cmd-ctrl-shift-t = 'move-node-to-workspace --focus-follows-window T'
     alt-cmd-ctrl-shift-c = 'move-node-to-workspace --focus-follows-window C'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus-back-and-forth
-    alt-cmd-ctrl-tab = 'focus-back-and-forth'
+    alt-shift-tab = 'focus-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-    alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+    alt-cmd-ctrl-tab = 'move-workspace-to-monitor --wrap-around next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
@@ -184,6 +186,14 @@ on-mode-changed = []
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
 
+
+# Assign workspaces to monitors
+[workspace-to-monitor-force-assignment]
+    A = ["X300"]
+    X = ["X300"]
+    C = ["W270"]
+
+
 # Ghostty Config
 [[on-window-detected]]
     if.app-id = 'com.mitchellh.ghostty'
@@ -198,7 +208,7 @@ on-mode-changed = []
 ## Helium Config
 [[on-window-detected]]
     if.app-id = 'net.imput.helium'
-    run = 'move-node-to-workspace A'
+    run = 'move-node-to-workspace H'
 
 ## Brave Config
 [[on-window-detected]]
