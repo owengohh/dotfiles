@@ -5,3 +5,4 @@
 1. aerospace - tiling window manager
 2. zed - ide
 3. starship - shell prompt
+4. jankyborders - window borders
