@@ -88,5 +88,8 @@ mvn() {
 # --- Custom Env ---
 . "$HOME/.local/bin/env"
 
+# --- Rust ---
+. "$HOME/.cargo/env" 
+
 # Vite+ bin (https://viteplus.dev) - Handles Node, so NVM is removed
 . "$HOME/.vite-plus/env"
