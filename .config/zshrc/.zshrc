@@ -85,6 +85,9 @@ mvn() {
   mvn "$@"
 }
 
+# --- Rust compile and run ---
+rr() { rustc "$1" && ./"${1%.rs}"; }
+
 # --- Custom Env ---
 . "$HOME/.local/bin/env"
 
