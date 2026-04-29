@@ -195,6 +195,7 @@ on-mode-changed = []
     A = ["X300"]
     X = ["X300"]
     C = ["W270"]
+    T = ["W270"]
 
 
 # Ghostty Config
