@@ -145,6 +145,7 @@ on-mode-changed = []
     alt-cmd-ctrl-x = 'workspace X' # helium
     alt-cmd-ctrl-t = 'workspace T' # terminal
     alt-cmd-ctrl-c = 'workspace C' # chat
+    alt-cmd-ctrl-s = 'workspace S' # spotify
     alt-cmd-ctrl-m = 'fullscreen'
 
 
@@ -162,6 +163,7 @@ on-mode-changed = []
     alt-cmd-ctrl-shift-x = 'move-node-to-workspace --focus-follows-window X'
     alt-cmd-ctrl-shift-t = 'move-node-to-workspace --focus-follows-window T'
     alt-cmd-ctrl-shift-c = 'move-node-to-workspace --focus-follows-window C'
+    alt-cmd-ctrl-shift-s = 'move-node-to-workspace --focus-follows-window S'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -192,10 +194,11 @@ on-mode-changed = []
 
 # Assign workspaces to monitors
 [workspace-to-monitor-force-assignment]
-    A = ["X300"]
-    X = ["X300"]
-    C = ["W270"]
-    T = ["W270"]
+    A = ["W270"]
+    X = ["W270"]
+    C = ["ARZOPA"]
+    T = ["ARZOPA"]
+    S = ["ARZOPA"]
 
 
 # Ghostty Config
@@ -260,3 +263,8 @@ on-mode-changed = []
 [[on-window-detected]]
     if.app-id = 'notion.id'
     run = 'move-node-to-workspace 2'
+
+## Spotify Config
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace S'

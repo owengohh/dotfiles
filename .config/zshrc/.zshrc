@@ -96,3 +96,5 @@ rr() { rustc "$1" && ./"${1%.rs}"; }
 
 # Vite+ bin (https://viteplus.dev) - Handles Node, so NVM is removed
 . "$HOME/.vite-plus/env"
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

@@ -8,18 +8,18 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "outline_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "collaboration_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "agent": {
-    "dock": "left",
+    "dock": "right",
     "favorite_models": [],
     "model_parameters": []
   },
   "git_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "lsp": {
     "vtsls": {
