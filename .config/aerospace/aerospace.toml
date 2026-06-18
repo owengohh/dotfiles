@@ -215,7 +215,7 @@ on-mode-changed = []
 ## Helium Config
 [[on-window-detected]]
     if.app-id = 'net.imput.helium'
-    run = 'move-node-to-workspace X'
+    run = 'move-node-to-workspace A'
 
 ## Brave Config
 [[on-window-detected]]
